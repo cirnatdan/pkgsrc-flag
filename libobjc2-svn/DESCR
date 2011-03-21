@@ -1,0 +1,5 @@
+The GNUstep Objective-C runtime is designed as a drop-in replacement for the
+GCC runtime.  It supports both a legacy and a modern ABI, allowing code
+compiled with old versions of GCC to be supported without requiring
+recompilation.
+
