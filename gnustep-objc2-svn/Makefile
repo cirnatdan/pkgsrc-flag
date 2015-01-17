@@ -11,13 +11,18 @@ LICENSE=	mit
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_TARGET=	all
-BUILD_DEPENDS+=	clang-2.8*:../../lang/clang
+BUILD_DEPENDS+=	clang-3*:../../lang/clang
 
 MAKE_FILE=	Makefile
 MAKE_FLAGS+=	CC=clang
 
+USE_LANGUAGES=  c c++
+USE_TOOLS=	cmake
+USE_CMAKE=	yes
+PKGSRC_COMPILER=	clang
+
 SVN_REPOSITORIES=	libobjc2
-SVN_ROOT.libobjc2=	http://svn.gna.org/svn/gnustep/libs/libobjc2/trunk
+SVN_ROOT.libobjc2=	svn://svn.gna.org/svn/gnustep/libs/libobjc2/trunk
 WRKSRC=			${WRKDIR}/libobjc2
 
 .include "../../wip/mk/svn-package.mk"
