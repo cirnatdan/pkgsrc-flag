@@ -2,7 +2,7 @@ This is a repository of my custom pkgsrc packages. Some of them might already be
 Packages are not guaranteed to compile.
 
 INSTALL:
-	cd /urs/pkgsrc
+	cd /usr/pkgsrc
 	git clone git://github.com/plextoria/pkgsrc-flag.git flag
 
 UPDATE:
