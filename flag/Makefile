@@ -1,7 +1,7 @@
 # $NetBSD$
 
-DISTNAME=	flag-201506
-#PKGNAME=	flag
+DISTNAME=	flag
+PKGNAME=	flag-201507
 CATEGORIES=	pkgtools
 
 MAINTAINER=	dan@alt.md
@@ -10,13 +10,15 @@ COMMENT=	Pkgsrc frontend
 LICENSE=	modified-bsd
 
 BUILD_TARGET=	all
-USE_LANGUAGES=	c
+USE_LANGUAGES=	c c++
 USE_TOOLS+=	    cmake
+USE_CMAKE=      yes
 
 INSTALLATION_DIRS+=     bin
 
 GIT_REPOSITORIES=	flag
-GIT_REPO.flag=	    git@github.com/cirnatdan/flag.git
+GIT_REPO.flag=	    git@github.com:cirnatdan/flag.git
+GIT_TAG.flag=		master
 #_GIT_FLAGS=		--quiet
 #GIT_MODULE=		    flag
 
