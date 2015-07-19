@@ -1,7 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	flag
-PKGNAME=	flag-201507
+PKGNAME=	flag-0.0.0
 CATEGORIES=	pkgtools
 
 MAINTAINER=	dan@alt.md
@@ -13,16 +13,14 @@ BUILD_TARGET=	all
 USE_LANGUAGES=	c c++
 USE_TOOLS+=	    cmake
 USE_CMAKE=      yes
+#USE_FEATURES=	nbcompat
 
 INSTALLATION_DIRS+=     bin
 
 GIT_REPOSITORIES=	flag
 GIT_REPO.flag=	    git@github.com:cirnatdan/flag.git
-GIT_TAG.flag=		master
-#_GIT_FLAGS=		--quiet
-#GIT_MODULE=		    flag
-
+#GIT_CHECKOUT_REVISION= 5d0c0b3205edd1a819d1eef0d478672af967958a
 GENERATE_PLIST=
 
-.include "../../wip/mk/git-package.mk"
+.include "../../flag/mk/git-package.mk"
 .include "../../mk/bsd.pkg.mk"
