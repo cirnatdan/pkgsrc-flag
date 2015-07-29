@@ -1,5 +1,5 @@
 $NetBSD$
 
-SHA1 (boot2docker-xhyve/v0.7.0.tar.gz) = eaf8201e628c6b08bb9c413ffe0e5514722df3c8
-RMD160 (boot2docker-xhyve/v0.7.0.tar.gz) = a42fcedda7d30e83d7db8b99d72ba5f83f31b798
-Size (boot2docker-xhyve/v0.7.0.tar.gz) = 9131 bytes
+SHA1 (boot2docker-xhyve/v0.6.0.tar.gz) = 9a0bc96e5e5f6c588e31acc2048ed9d798b6106b
+RMD160 (boot2docker-xhyve/v0.6.0.tar.gz) = e996bbe98bc4f18c5782c3502c4feef06d57983c
+Size (boot2docker-xhyve/v0.6.0.tar.gz) = 8586 bytes
