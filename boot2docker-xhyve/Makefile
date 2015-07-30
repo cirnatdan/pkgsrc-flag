@@ -17,7 +17,18 @@ WRKSRC=	${WRKDIR}/${GITHUB_PROJECT}-${VERSION}
 
 USE_TOOLS+= gmake
 
+SUBST_CLASSES+=                 fix-paths
+SUBST_STAGE.fix-paths=          pre-configure
+SUBST_MESSAGE.fix-paths=        Fixing absolute paths.
+SUBST_FILES.fix-paths=          *.sh
+SUBST_SED.fix-paths=            -e 's,/usr/pkg/share,${PREFIX}/share,g'
+
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/xhyverun.sh ${DESTDIR}${PREFIX}/bin/boot2docker-xhyve
+	${INSTALL_DATA}	  ${WRKSRC}/boot2docker-data.img ${DESTDIR}${PREFIX}/share/boot2docker-xhyve/boot2docker-data.img
+	${INSTALL_DATA}	  ${WRKSRC}/initrd.img ${DESTDIR}${PREFIX}/share/boot2docker-xhyve/initrd.img
+	${INSTALL_DATA}	  ${WRKSRC}/vmlinuz64 ${DESTDIR}${PREFIX}/share/boot2docker-xhyve/vmlinuz64
+	
+DEPENDS+=	xhyve:../xhyve
 
 .include "../../mk/bsd.pkg.mk"

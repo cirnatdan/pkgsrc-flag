@@ -1,1 +1,5 @@
 @comment $NetBSD$
+bin/boot2docker-xhyve
+share/boot2docker-xhyve/boot2docker-data.img
+share/boot2docker-xhyve/initrd.img
+share/boot2docker-xhyve/vmlinuz64
