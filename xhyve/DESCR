@@ -1,5 +1,0 @@
-The xhyve hypervisor is a port of bhyve to OS X. It is built on top of
-Hypervisor.framework in OS X 10.10 Yosemite and higher, runs entirely
-in userspace, and has no other dependencies. It can run FreeBSD and vanilla
-Linux distributions and may gain support for other guest operating systems
-in the future.
