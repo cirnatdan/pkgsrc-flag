@@ -18,7 +18,7 @@ USE_CMAKE=      yes
 INSTALLATION_DIRS+=     bin
 
 GIT_REPOSITORIES=	flag
-GIT_REPO.flag=	    git@github.com:cirnatdan/flag.git
+GIT_REPO.flag=		https://github.com/cirnatdan/flag.git
 #GIT_CHECKOUT_REVISION= 5d0c0b3205edd1a819d1eef0d478672af967958a
 GENERATE_PLIST=
 
