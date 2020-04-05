@@ -22,10 +22,12 @@
 .if !defined(_PKG_MK_GIT_PACKAGE_MK)
 _PKG_MK_GIT_PACKAGE_MK=	# defined
 
-.if exists(../../devel/git/Makefile)
+.if !defined(USE_HOST_GIT)
+. if exists(../../devel/git/Makefile)
 BUILD_DEPENDS+=		git-base>=1.6.4:../../devel/git-base
-.else
+. else
 BUILD_DEPENDS+=		scmgit-base>=1.6.4:../../devel/scmgit-base
+. endif
 .endif
 
 #
