@@ -14,7 +14,7 @@ USE_LANGUAGES=	c
 HAS_CONFIGURE=	yes
 USE_TOOLS+=	gmake
 
-CONFIGURE_ARGS=	--prefix=${PREFIX}
+CONFIGURE_ARGS=	--prefix=${PREFIX} --includedir=${PREFIX}/include/musl
 NO_BUILD=	yes
 INSTALL_TARGET=	install-headers
 
