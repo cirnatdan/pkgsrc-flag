@@ -10,9 +10,7 @@ COMMENT=	Pkgsrc frontend
 LICENSE=	modified-bsd
 
 BUILD_TARGET=	all
-USE_LANGUAGES=	c c++
-USE_TOOLS+=	    cmake
-USE_CMAKE=      yes
+USE_LANGUAGES=	c
 #USE_FEATURES=	nbcompat
 
 INSTALLATION_DIRS+=     bin

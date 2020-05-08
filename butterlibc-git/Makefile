@@ -20,6 +20,7 @@ GIT_REPO.butterlibc=	https://github.com/cirnatdan/butterlibc.git
 
 do-install:
 	${INSTALL_LIB} ${WRKSRC}/libbutterc.so ${DESTDIR}${PREFIX}/lib/
+	${INSTALL_LIB} ${WRKSRC}/crt0.o ${DESTDIR}${PREFIX}/lib
 
 .include "../../flag/mk/git-package.mk"
 .include "../../mk/bsd.pkg.mk"
