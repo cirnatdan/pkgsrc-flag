@@ -3,6 +3,7 @@
 DISTNAME=	flag
 PKGNAME=	flag-0.0.0
 CATEGORIES=	pkgtools
+PKGREVISION=	2
 
 MAINTAINER=	dan@alt.md
 HOMEPAGE=	http://github.com/cirnatdan/flag
@@ -11,8 +12,8 @@ LICENSE=	modified-bsd
 
 BUILD_TARGET=	all
 USE_LANGUAGES=	c
-#USE_FEATURES=	nbcompat
 
+USE_BSD_MAKEFILE=	yes
 INSTALLATION_DIRS+=     bin
 
 GIT_REPOSITORIES=	flag
